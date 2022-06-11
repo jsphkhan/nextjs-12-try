@@ -35,7 +35,7 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Home Page - Users</title>
+        <title>Home Page</title>
       </Head>
       <h1>Home Page</h1>
       <Link href="/details"><a>Details</a></Link>

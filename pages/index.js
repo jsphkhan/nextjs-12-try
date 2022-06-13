@@ -1,5 +1,3 @@
-// import { useEffect, useState } from 'react';
-
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,23 +8,6 @@ import _ from 'lodash';
 import styles from '../styles/Home.module.css';
 
 export default function HomePage({ users }) {
-  // const [users, setUsers] = useState([]);
-  // useEffect(() => {
-  //   // make call
-  //   async function fetchData() {
-  //     try {
-  //       const response = await fetch('https://reqres.in/api/users?per_page=12');
-  //       const data = await response.json();
-  //       const users = _.get(data, 'data', {});
-  //       console.log(users);
-  //       setUsers(users);
-  //     } catch (err) {
-  //       console.log('Error when making call: ', err);
-  //     }
-  //   }
-  //   fetchData();
-  // }, []);
-
   return (
     <>
       <Head>
@@ -73,10 +54,9 @@ export async function getServerSideProps() {
     const response = await fetch('https://reqres.in/api/users?per_page=12');
     const data = await response.json();
     const users = _.get(data, 'data', {});
-    console.log(users);
     return {
       props: {
-        users,
+        users: [...users, ...users], // duplicate data
       },
     };
   } catch (err) {

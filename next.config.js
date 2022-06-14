@@ -25,6 +25,10 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['reqres.in'],
+  },
+  i18n: {
+    locales: ['en', 'ar'],
+    defaultLocale: 'ar'
   }
 }
 

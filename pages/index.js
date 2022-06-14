@@ -18,6 +18,17 @@ export default function HomePage({ users }) {
         <Link href='/details'>
           <a>Details</a>
         </Link>
+      </div>
+      <div className={styles.hero}>
+        <Image 
+          src='/images/mob-banner-bg.png' 
+          alt='hero' 
+          layout='fill'
+          objectFit='cover'
+          quality={100}
+        />
+      </div>
+      <div className={styles.homecontainer}>
         <ul className={styles.listcontainer}>
           {users.map((user) => {
             const id = _.get(user, 'id');

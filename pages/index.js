@@ -42,7 +42,7 @@ export default function HomePage({ users }) {
             return (
               <li key={id}>
                 <div className={styles.img}>
-                  <Image src={avatar} width={80} height={80} />
+                  <Image src={avatar} width={80} height={80} layout="fixed" />
                 </div>
                 <div className={styles.name}>
                   <span>{name}</span>

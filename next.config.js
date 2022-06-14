@@ -27,8 +27,9 @@ const nextConfig = {
     domains: ['reqres.in'],
   },
   i18n: {
-    locales: ['en', 'ar'],
-    defaultLocale: 'ar'
+    locales: ['en', 'fr', 'ar'],
+    defaultLocale: 'fr',
+    // localeDetection: false
   }
 }
 

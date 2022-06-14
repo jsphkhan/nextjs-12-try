@@ -1,0 +1,14 @@
+.editcontainer {
+  padding: 20px;
+}
+
+.editcontainer > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.editcontainer > ul li {
+  padding: 25px;
+}

@@ -18,6 +18,9 @@ export default function HomePage({ users }) {
         <Link href='/details'>
           <a>Details</a>
         </Link>
+        <Link href='/edit'>
+          <a className={styles.editmenu}>Edit</a>
+        </Link>
       </div>
       <div className={styles.hero}>
         <Image 

@@ -26,7 +26,7 @@ const nextConfig = {
       }
     ];
   },
-  reactStrictMode: true,
+  // reactStrictMode: true,
   images: {
     domains: ['reqres.in'],
   },

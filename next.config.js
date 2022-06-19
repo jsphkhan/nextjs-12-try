@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
+
+const withPreact = require('next-plugin-preact');
+
 const nextConfig = {
+  // distDir: 'build',
   async headers() {
     return [
       {
@@ -26,11 +30,15 @@ const nextConfig = {
   images: {
     domains: ['reqres.in'],
   },
-  i18n: {
-    locales: ['en', 'ar'],
-    defaultLocale: 'ar',
-    // localeDetection: false
-  }
+  // i18n: {
+  //   locales: ['en', 'ar'],
+  //   defaultLocale: 'ar'
+  //   // localeDetection: false
+  // },
+  compiler: {
+    removeConsole: false
+  },
+  swcMinify:  true
 }
 
-module.exports = nextConfig
+module.exports = withPreact(nextConfig);

@@ -1,4 +1,4 @@
-When you set up a NextjS 12 project for first time you will get this error,
+** When you set up a NextjS 12 project for first time you will get this error,
 
 Parsing error : Cannot find module 'next/babel'
 
@@ -13,3 +13,5 @@ And in .eslintrc, replace the existing code with:
 {
   "extends": ["next/babel","next/core-web-vitals"]
 }
+
+** I have renamed .babelrc to .babelrc_joseph so that SWC compilation can happen for NextJS Build

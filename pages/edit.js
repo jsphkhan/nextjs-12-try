@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 //import heavy vendor libs
 import _ from 'lodash';
-import moment from 'moment';
+// import moment from 'moment';
 
 import styles from '../styles/Edit.module.css';
 
@@ -26,9 +26,9 @@ export default function EditPage() {
     }
     fetchData();
 
-    const locale = moment.locale();
-    console.log(locale);
-    console.log(moment().format('DD MM YYYY'));
+    // const locale = moment.locale();
+    // console.log(locale);
+    // console.log(moment().format('DD MM YYYY'));
   }, []);
 
   return (

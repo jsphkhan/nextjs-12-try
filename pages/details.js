@@ -2,15 +2,15 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 
 //import heavy vendor libs
-import moment from 'moment';
+// import moment from 'moment';
 
 import styles from '../styles/Details.module.css';
 
 export default function DetailsPage() {
   useEffect(() => {
-    const locale = moment.locale();
-    console.log(locale);
-    console.log(moment().format('DD MM YYYY'));
+    // const locale = moment.locale();
+    // console.log(locale);
+    // console.log(moment().format('DD MM YYYY'));
   }, []);
 
   return (

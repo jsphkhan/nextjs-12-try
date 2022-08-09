@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 
-const withPreact = require('next-plugin-preact');
+require('dotenv').config();
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: JSON.parse(process.env.ANALYZE)
+});
 
 const nextConfig = {
+  // optimizeFonts: false,
   // distDir: 'build',
   async headers() {
     return [
@@ -38,7 +42,7 @@ const nextConfig = {
   compiler: {
     removeConsole: false
   },
-  swcMinify:  true
+  swcMinify:  false
 }
 
-module.exports = withPreact(nextConfig);
+module.exports = withBundleAnalyzer(nextConfig);

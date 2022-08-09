@@ -5,14 +5,14 @@ import Link from 'next/link';
 //import heavy vendor libs
 import _ from 'lodash';
 
-import { isValidName, sum } from '@jsphkhan/my-npm-package';
+// import { isValidName, sum } from '@jsphkhan/my-npm-package';
 
 import styles from '../styles/Home.module.css';
 
 export default function HomePage({ users }) {
   const handleClick = () => {
-    console.log(isValidName('joseph'));
-    console.log(sum(1,2));
+    // console.log(isValidName('joseph'));
+    // console.log(sum(1,2));
   }
 
   return (

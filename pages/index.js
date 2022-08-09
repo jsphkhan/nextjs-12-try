@@ -5,16 +5,9 @@ import Link from 'next/link';
 //import heavy vendor libs
 import _ from 'lodash';
 
-// import { isValidName, sum } from '@jsphkhan/my-npm-package';
-
 import styles from '../styles/Home.module.css';
 
 export default function HomePage({ users }) {
-  const handleClick = () => {
-    // console.log(isValidName('joseph'));
-    // console.log(sum(1,2));
-  }
-
   return (
     <>
       <Head>
@@ -63,7 +56,6 @@ export default function HomePage({ users }) {
             );
           })}
         </ul>
-        <button onClick={handleClick}>Click</button>
         <Link href='/edit'>
           <a>Edit</a>
         </Link>
